@@ -1,0 +1,188 @@
+#header {
+    background-color: #ebf6f9;
+    padding: 75px 0px 55px 0px;
+}
+
+.navbar-nav > li{
+  padding-left:60px;
+  padding-right:60px;
+  overflow: visible;
+}
+
+body {
+  font-family: Optima, Helvetica, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
+}
+
+#accouncement {
+    color: red;
+}
+
+#one, #two, #three, #four {
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#collapse-one, #collapse-three {
+    background-color: #f7f7f7;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#collapse-two, #collapse-four  {
+    background-color: #f7f7f7;
+    padding-bottom: 5px;
+}
+
+
+#service-info {
+    text-align: center;
+}
+
+#headingOne, #headingTwo, #headingThree {
+    background-color: #d1eff7;
+}
+
+button, h5 {
+    /* color: #9b9b9b; */
+    color:black;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+button, h5:hover {
+    color:black;
+    text-decoration: none;
+}
+
+
+#footcare-package-accordion {
+    display:none;
+}
+
+@media screen and (max-width: 991px) {
+    #footcare-package-accordion {
+        display:block;
+    }
+    #package-buttons {
+        display:none;
+    }
+}
+
+#package-options-small {
+    background-color: #ebf6f9;
+    padding-bottom: 50px;
+}
+
+#package-options {
+    background-color: #ebf6f9;
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+
+#package-buttons {
+    background-color: #ebf6f9;
+    line-height: 80%;
+}
+
+#package-buttons button {
+    /* font-size: 40px; */
+    font-size: 3.1vw;
+    height: 145px;
+    overflow: hidden;
+}
+
+.row .card-body {
+    font-size: 20px;
+}
+
+#bio {
+    align-items: center;
+    padding-top: 50px;
+    background-color: #edfce0;
+}
+
+img {
+    max-width: 100%;
+    padding:1px;
+    border: thick double black;
+}
+
+#about-me-list {
+    /* background-color: #dbccc0; */
+}
+
+#about-me-title {
+    text-align: center;
+}
+
+#additional-info-row {
+    padding: 50px 0px 30px 0px;
+}
+
+.h1, #list-num {
+    margin:0 auto;
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#feedback-slideshow {
+    padding: 70px 0px 50px 0px;
+    background-color: #fde6ff;
+}
+
+.carousel-item {
+    max-width: 50%
+    white-space:nowrap;
+    position:relative;
+}
+
+#more-resources {
+    margin-left:80px;
+    white-space:nowrap;
+    position:relative;
+}
+
+#contact-row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#name-input {
+    margin-right:7px;
+}
+
+@media screen and (min-width: 992px) {
+    #email-input {
+        margin-top:5px;
+    }
+    #contact-info {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1027px) {
+    #email-input {
+        margin-top:0px;
+    }
+    #contact-info {
+        text-align: right;
+    }
+}
+
+#footcare-btn {
+    font-size: 30px;
+    background-color: pink;
+    border: pink;
+}
+#agency-btn {
+    font-size: 30px;
+    background-color: purple;
+    border: purple;
+}

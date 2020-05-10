@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sole Purpose Foot Care</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/main.css">
+         <script src="static/main.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-exanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Therapeutic Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row justify-content-end" id="header">
+                <div class="col-12 text-center">
+                    <h1 style="font-size: 30px;">Sole Purpose</h1>
+                    <h4 style="font-size: 90px;">Foot Care</h4>
+
+                </div>
+            </div>
+
+            <!-- FOOT CARE PACKAGES -->
+            <div class="row justify-content-center" id="package-buttons">
+                <div class="col-lg-3">
+                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#fullPackageCollapse" aria-expanded="false" aria-controls="fullPackageCollapse">Full Nursing Foot Care</button>
+                </div>
+                <div class="col-lg-3">
+                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#nailCareCollapse" aria-expanded="false" aria-controls="nailCareCollapse">Nursing Nail Care</button>
+                </div>
+                <div class="col-lg-3">
+                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#skinCareCollapse" aria-expanded="false" aria-controls="skinCareCollapse">Nursing Skin Care</button>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="package-options">
+                <div class="col-lg-3">
+                    <div class="collapse" id="fullPackageCollapse">
+                        <div class="card" id="card1">
+                                <div class="row card-body">
+                                    <div class="col">
+                                        Includes:
+                                    <ul class="">
+                                        <li>Full Assessment</li>
+                                        <li>All Nail Care</li>
+                                        <li>All Skin Care</li>
+                                        <li>Moisturize</li>
+                                        <li>Massage</li>
+                                    </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p>Great option for first time clients. You will receive a comprehensive foot health assessment, including recommendations for future foot treatments.</p>
+                                        <br>
+                                        <p>$65.00</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="collapse" id="nailCareCollapse">
+                        <div class="card" id="card1">
+                            <div class="row card-body">
+                                <div class="col">
+                                    Includes:
+                                <ul class="">
+                                    <li>Assessment</li>
+                                    <li>Trimming</li>
+                                    <li>Filing</li>
+                                    <li>Moisturize</li>
+                                    <li>Massage</li>
+                                </ul>
+                                </div>
+                                <div class="row" style="padding-left:5px;">
+                                    <div class="col">
+                                        <p>Great option if you do not have any issues with corns or calluses and are just looking for general upkeep.</p>
+                                        <br>
+                                        <p>$50.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="collapse" id="skinCareCollapse">
+                        <div class="card" id="card1">
+                            <div class="row card-body">
+                                <div class="col">
+                                    Includes:
+                                <ul class="">
+                                    <li>Assessment</li>
+                                    <li>Callus Filing</li>
+                                    <li>Corn Removal</li>
+                                    <li>Skin Conditions</li>
+                                    <li>Massage</li>
+                                    <li>Moisturize</li>
+                                </ul>
+                                </div>
+                                <div class="col">
+                                    <p>Nails in great shape? Amazing! This service will help alleviate any current painful skin conditions.</p>
+                                    <br>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- FOOT CARE PACKAGES FOR SMALL SCREEN -->
+            <div class="row justify-content-center" id="package-options-small">
+                <div class="col-lg-6">
+                    <div class="accordion" id="footcare-package-accordion">
+                        <div class="card" id="card1">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                 <h5 class="mb-1"><strong>Full Nursing Foot Care</strong></h5>
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#footcare-package-accordion">
+                                <div class="row card-body">
+                                    <div class="col">
+                                        Includes:
+                                    <ul class="">
+                                        <li>Full Assessment</li>
+                                        <li>All Nail Care</li>
+                                        <li>All Skin Care</li>
+                                        <li>Moisturize</li>
+                                        <li>Massage</li>
+                                    </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p>Great option for first time clients. You will receive a comprehensive foot health assessment, including recommendations for future foot treatments.</p>
+                                        <br>
+                                        <p>$65.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      <h5 class="mb-1"><strong>Nursing Nail Care</strong></h5>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#footcare-package-accordion">
+                                <div class="row card-body">
+                                    <div class="col">
+                                        Includes:
+                                    <ul class="">
+                                        <li>Assessment</li>
+                                        <li>Trimming</li>
+                                        <li>Filing</li>
+                                        <li>Moisturize</li>
+                                        <li>Massage</li>
+                                    </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p>Great option if you do not have any issues with corns or calluses and are just looking for general upkeep.</p>
+                                        <br>
+                                        <p>$50.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h5 class="mb-1"><strong>Nursing Skin Care</strong></h5>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#footcare-package-accordion">
+                                <div class="row card-body">
+                                    <div class="col">
+                                        Includes:
+                                    <ul class="">
+                                        <li>Assessment</li>
+                                        <li>Callus Filing</li>
+                                        <li>Corn Removal</li>
+                                        <li>Skin Conditions</li>
+                                        <li>Massage</li>
+                                        <li>Moisturize</li>
+                                    </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p>Nails in great shape? Amazing! This service will help alleviate any current painful skin conditions.</p>
+                                        <br>
+                                        <p>$50.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARE INFO ROW -->
+            <div class="row" id="service-info">
+                <div class="col-lg-4" id="one">
+                    <h1>Callus & Corn<br>Removal</h1>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
+                    <hr>
+                </div>
+                <div class="col-lg-4" id="two">
+                    <h1>Nail<br>Trimming & Filing</h1>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
+                    <hr>
+                </div>
+                <div class="col-lg-4" id="three">
+                    <h1>Professional Foot Assessment</h1>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- DROPDOWN INFO MENU -->
+            <div class="row " id="popdown-info">
+                <div class="col-md-4 text-center" id="collapse-one">
+                    <div class="collapse multi-collapse" id="collapse1">
+                        <ul class="list-unstyled">
+                            <li><strong>Whats the difference?</strong></li>
+                            <li><strong>Callus</strong>: a section of skin that has become thickened or toughened due to friction, pressure or irritation. Calluses are yellowish or pale in colour, course to touch; with a decreased sensation on the callused area. Calluses are rarely painful.</li>
+                            <li><strong>Corn</strong>: similar to a callus, but smaller and with a clearly defined centre that can be hard or soft. They tend to form on parts of your feet where you do not bare weight, but instead on bony prominences. Corns can be painful when pressed.​</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4 text-center" id="collapse-two">
+                    <div class="collapse multi-collapse" id="collapse2">
+                        <ul class="list-unstyled">
+                            <li><strong>Dealing with all types of toenails</strong></li>
+                            <li><small><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</small></li>
+                            <li><small><strong>Ingrown Nails</strong>: Occur when the nail grows into one or both sides of the paronychium. The skin appears red and inflamed and may become infected. They are very painful to touch. Seek medical attention if infection is present.</small></li>
+                            <li><small><strong>Ram's Horn Toenails</strong>: A nail disease that causes one side of the nail to grow faster than the other. The nails are thick and curvy. The nail will look yellow or brown, thick, long and curvy.</small></li>
+                            <li><small>There are many other types of nail deformities that I can deal with. If you have any concerns with your nails please feel free to send me a message!</small></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4 text-center" id="collapse-three">
+                    <div class="collapse multi-collapse" id="collapse3">
+                        <ul class="list-unstyled">
+                            <li><strong>Assessment of feet in order to determine a plan of action</strong></li>
+                            <li>I will provide a comprehensive assessment of how you walk and to how the physiology of your feet is affecting you. Whether it is causing you pain from an ulcer or from a corn, I will help you get to the root cause of the problem and make appropriate referrals.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center text-center" id="feedback-slideshow">
+                <div class="col-6">
+                    <div class="carousel slide" data-ride="carousel" data-interval="500000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- <img class="d-block w-100" src="images/gnome_bard.jpg" alt="First slide"> -->
+                                <h1>"Sole Purpose's professional mannerism, in combination with excellent clinical skills, made for a feeling of safe and effective nursing care."</h1>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- <img class="d-block w-100" src="images/michael_the_nurse.png" alt="Second slide"> -->
+                                <h1>"Wow! I really felt special when I went to see Mike. He took the time to listen to my concerns and help come up with a solution. My feet have never felt better."</h1>
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <h1>Wow! I really felt special when I went to see Mike. He took the time to listen to my concerns and help come up with a solution. My feet have never felt better.</h1>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="row" id="contact-row">
+                <!-- <div class="col-lg-2" id="contact-info">
+
+                </div>
+                <div class="col-lg-2" id="contact-info">
+                </div> -->
+                <div class="col-lg-6" id="contact-info">
+                    <p>
+                        <h4 style="color:#c1c1c1">Sole Purpose</h4><br>
+                        admin@solepurposefootcare.org<br>
+                        www.solepurposefootcare.org<br>
+                        Victoria, B.C.
+                    </p>
+                </div>
+                <div class="col-lg-6" id="contact-form">
+                    <form action="https://formspree.io/mjvabnln" method="POST">
+                        <div class="form-inline my-3">
+                            <label class="sr-only" for="name-input">Name</label>
+                            <input class="form-control" type="text" name="_name" id="name-input" placeholder="Name">
+                            <label class="sr-only" for="email-input">Email</label>
+                            <input class="form-control" type="email" name="_replyto" id="email-input" placeholder="Email" style="width:300px;">
+                        </div>
+
+                        <textarea class="form-control my-2" rows="5" name="_message" id="message-input" placeholder="Message" style="width:485px;"></textarea>
+
+                        <button type="submit" class="btn btn-secondary btn-sm">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

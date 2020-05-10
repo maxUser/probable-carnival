@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Max Kasprzik</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/main.css">
+        <script src="static/main.js"></script>
+    </head>
+    <body>
+
+        <div class="container p-3 my-3 border text-dark">
+
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>MAX KASPRZIK</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-danger" id="button" onclick="show_hangman_game()">Play Hangman</button>
+                </div>
+            </div>
+            <!-- ------- -->
+            <!-- HANGMAN -->
+            <!-- ------- -->
+            <div class="container p-3 my-3 bg-dark text-white" id="hangman_game" style="display:block">
+                <div class="row justify-content-end">
+                    <div class="col-4">
+                        <div id="player_pick_screen">
+                            <p>How many players?</p>
+                            <button type="button" class="btn btn-light btn-sm" onclick="one_player_selected()" id="one_player">1</button>
+                            <button type="button" class="btn btn-light btn-sm" onclick="two_players_selected()" id="two_players">2</button>
+                        </div>
+                        <div id="word_pick_screen" style="display:none">
+                            <small>Player 1:</small>
+                            <h1>ENTER<br>A<br>WORD</h1>
+                            <input type="text" placeholder="Name" id="word_to_guess">
+                            <button type="button" class="btn btn-light btn-sm" onclick="save_word()" id="word_btn">Okay</button>
+                            <script type="text/javascript">
+                                var word_input = document.getElementById("word_to_guess");
+                                // Execute a function when the user releases a key on the keyboard
+                                word_input.addEventListener("keyup", function(event) {
+                                  // Number 13 is the "Enter" key on the keyboard
+                                  if (event.keyCode === 13) {
+                                    // Cancel the default action, if needed
+                                    event.preventDefault();
+                                    // Trigger the button element with a click
+                                    document.getElementById("word_btn").click();
+                                  }
+                                });
+                            </script>
+                        </div>
+                        <div id="guess_word_screen" style="display:none">
+
+                            <!-- <small>Player 2:</small> -->
+                            <h1>GUESS<br>A<br>LETTER:</h1>
+                            <input type="text" value="" id="guess" style="width:30px">
+                            <button type="button" class="btn btn-outline-light btn-sm" onclick="check_guess()" id="check_btn">Check</button>
+                            <br>
+                            <label id="winner" style="display:none"></label>
+
+                            <button type="button" class="btn btn-info btn-sm" onclick="restart()" style="display:none" id="restart_btn">Play Again</button>
+                            <br>
+                            <label id="hidden_word"></label>
+                            <br>
+                            <label id="incorrect" style="color:red;"></label>
+                            <script type="text/javascript">
+                                var guess_input = document.getElementById("guess");
+                                // Execute a function when the user releases a key on the keyboard
+                                guess_input.addEventListener("keyup", function(event) {
+                                  // Number 13 is the "Enter" key on the keyboard
+                                  if (event.keyCode === 13) {
+                                    // Cancel the default action, if needed
+                                    event.preventDefault();
+                                    // Trigger the button element with a click
+                                    document.getElementById("check_btn").click();
+                                  }
+                                });
+                            </script>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <img src="images/hangman_stand.png" id="0_incorrect" style="width:95%">
+                        <img src="images/hangman_1.png" id="1_incorrect" style="width:95%; display:none;">
+                        <img src="images/hangman_2.png" id="2_incorrect" style="width:95%; display:none;">
+                        <img src="images/hangman_3.png" id="3_incorrect" style="width:95%; display:none;">
+                        <img src="images/hangman_4.png" id="4_incorrect" style="width:95%; display:none;">
+                        <img src="images/hangman_5.png" id="5_incorrect" style="width:95%; display:none;">
+                        <img src="images/hangman_6.png" id="6_incorrect" style="width:95%; display:none;">
+                    </div>
+                </div>
+            </div>
+            <!-- ----------- -->
+            <!-- END HANGMAN -->
+            <!-- ----------- -->
+            <!-- <div id="test_div">
+                <p>Test Div</p>
+                <p id="test_p">asdf</p>
+                <script>
+                    document.getElementById("test_p").innerHTML = get_random_word();
+                </script>
+            </div> -->
+        </div>
+    </body>
+</html>
