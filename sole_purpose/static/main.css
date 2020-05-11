@@ -62,14 +62,7 @@ button, h5:hover {
     display:none;
 }
 
-@media screen and (max-width: 991px) {
-    #footcare-package-accordion {
-        display:block;
-    }
-    #package-buttons {
-        display:none;
-    }
-}
+
 
 #package-options-small {
     background-color: #ebf6f9;
@@ -104,7 +97,7 @@ button, h5:hover {
     background-color: #edfce0;
 }
 
-img {
+#portrait img {
     max-width: 100%;
     padding:1px;
     border: thick double black;
@@ -157,6 +150,18 @@ img {
     margin-right:7px;
 }
 
+#footcare-btn {
+    font-size: 30px;
+    background-color: pink;
+    border: pink;
+}
+#agency-btn {
+    font-size: 30px;
+    background-color: purple;
+    border: purple;
+}
+
+/* MEDIA SHIT */
 @media screen and (min-width: 992px) {
     #email-input {
         margin-top:5px;
@@ -176,13 +181,14 @@ img {
     }
 }
 
-#footcare-btn {
-    font-size: 30px;
-    background-color: pink;
-    border: pink;
-}
-#agency-btn {
-    font-size: 30px;
-    background-color: purple;
-    border: purple;
+@media screen and (max-width: 991px) {
+    #footcare-package-accordion {
+        display:block;
+    }
+    #package-buttons {
+        display:none;
+    }
+    #package-options {
+        display:none;
+    }
 }
