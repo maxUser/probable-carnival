@@ -40,11 +40,12 @@
         </nav>
         <div class="container-fluid">
             <div class="row justify-content-end" id="header">
-                <div class="col-12 text-center">
+                <!-- <div class="col-12 text-center">
                     <h1 style="font-size: 30px;">Sole Purpose</h1>
                     <h4 style="font-size: 90px;">Foot Care</h4>
 
-                </div>
+                </div> -->
+                <img src="images/logo-large.png" alt="">
             </div>
 
             <!-- FOOT CARE PACKAGES -->
@@ -133,7 +134,6 @@
                     </div>
                 </div>
             </div>
-
 
             <!-- FOOT CARE PACKAGES FOR SMALL SCREEN -->
             <div class="row justify-content-center" id="package-options-small">
@@ -229,40 +229,25 @@
                 </div>
             </div>
 
-
             <!-- CARE INFO ROW -->
             <div class="row" id="service-info">
                 <div class="col-lg-4" id="one">
                     <h1>Callus & Corn<br>Removal</h1>
-                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">Read More</button>
                     <hr>
-                </div>
-                <div class="col-lg-4" id="two">
-                    <h1>Nail<br>Trimming & Filing</h1>
-                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
-                    <hr>
-                </div>
-                <div class="col-lg-4" id="three">
-                    <h1>Professional Foot Assessment</h1>
-                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapse1 collapse2 collapse3 collapse4">Read More</button>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- DROPDOWN INFO MENU -->
-            <div class="row " id="popdown-info">
-                <div class="col-md-4 text-center" id="collapse-one">
-                    <div class="collapse multi-collapse" id="collapse1">
+                    <div class="collapse" id="info-collapse1">
                         <ul class="list-unstyled">
                             <li><strong>Whats the difference?</strong></li>
                             <li><strong>Callus</strong>: a section of skin that has become thickened or toughened due to friction, pressure or irritation. Calluses are yellowish or pale in colour, course to touch; with a decreased sensation on the callused area. Calluses are rarely painful.</li>
                             <li><strong>Corn</strong>: similar to a callus, but smaller and with a clearly defined centre that can be hard or soft. They tend to form on parts of your feet where you do not bare weight, but instead on bony prominences. Corns can be painful when pressed.​</li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="col-md-4 text-center" id="collapse-two">
-                    <div class="collapse multi-collapse" id="collapse2">
+                <div class="col-lg-4" id="two">
+                    <h1>Nail<br>Trimming & Filing</h1>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#info-collapse2" aria-expanded="false" aria-controls="info-collapse2">Read More</button>
+                    <hr>
+                    <div class="collapse" id="info-collapse2">
                         <ul class="list-unstyled">
                             <li><strong>Dealing with all types of toenails</strong></li>
                             <li><small><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</small></li>
@@ -271,33 +256,62 @@
                             <li><small>There are many other types of nail deformities that I can deal with. If you have any concerns with your nails please feel free to send me a message!</small></li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="col-md-4 text-center" id="collapse-three">
-                    <div class="collapse multi-collapse" id="collapse3">
+                <div class="col-lg-4" id="three">
+                    <h1>Professional Foot<br>Assessment</h1>
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#info-collapse3" aria-expanded="false" aria-controls="info-collapse3">Read More</button>
+                    <hr>
+                    <div class="collapse" id="info-collapse3">
                         <ul class="list-unstyled">
                             <li><strong>Assessment of feet in order to determine a plan of action</strong></li>
                             <li>I will provide a comprehensive assessment of how you walk and to how the physiology of your feet is affecting you. Whether it is causing you pain from an ulcer or from a corn, I will help you get to the root cause of the problem and make appropriate referrals.</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
+
+            <!-- DROPDOWN INFO MENU depracated -->
+            <div class="row " id="popdown-info">
+                <!-- <div class="col-md-4 text-center" id="collapse-one">
+                    <div class="collapse multi-collapse" id="collapse1">
+                        <ul class="list-unstyled">
+                            <li><strong>Whats the difference?</strong></li>
+                            <li><strong>Callus</strong>: a section of skin that has become thickened or toughened due to friction, pressure or irritation. Calluses are yellowish or pale in colour, course to touch; with a decreased sensation on the callused area. Calluses are rarely painful.</li>
+                            <li><strong>Corn</strong>: similar to a callus, but smaller and with a clearly defined centre that can be hard or soft. They tend to form on parts of your feet where you do not bare weight, but instead on bony prominences. Corns can be painful when pressed.​</li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-md-4 text-center" id="collapse-two">
+                    <!-- <div class="collapse multi-collapse" id="collapse2">
+                        <ul class="list-unstyled">
+                            <li><strong>Dealing with all types of toenails</strong></li>
+                            <li><small><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</small></li>
+                            <li><small><strong>Ingrown Nails</strong>: Occur when the nail grows into one or both sides of the paronychium. The skin appears red and inflamed and may become infected. They are very painful to touch. Seek medical attention if infection is present.</small></li>
+                            <li><small><strong>Ram's Horn Toenails</strong>: A nail disease that causes one side of the nail to grow faster than the other. The nails are thick and curvy. The nail will look yellow or brown, thick, long and curvy.</small></li>
+                            <li><small>There are many other types of nail deformities that I can deal with. If you have any concerns with your nails please feel free to send me a message!</small></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="col-md-4 text-center" id="collapse-three">
+                    <!-- <div class="collapse multi-collapse" id="collapse3">
+                        <ul class="list-unstyled">
+                            <li><strong>Assessment of feet in order to determine a plan of action</strong></li>
+                            <li>I will provide a comprehensive assessment of how you walk and to how the physiology of your feet is affecting you. Whether it is causing you pain from an ulcer or from a corn, I will help you get to the root cause of the problem and make appropriate referrals.</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+
             <div class="row justify-content-center text-center" id="feedback-slideshow">
                 <div class="col-6">
                     <div class="carousel slide" data-ride="carousel" data-interval="500000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <!-- <img class="d-block w-100" src="images/gnome_bard.jpg" alt="First slide"> -->
                                 <h1>"Sole Purpose's professional mannerism, in combination with excellent clinical skills, made for a feeling of safe and effective nursing care."</h1>
                             </div>
                             <div class="carousel-item">
-                                <!-- <img class="d-block w-100" src="images/michael_the_nurse.png" alt="Second slide"> -->
                                 <h1>"Wow! I really felt special when I went to see Mike. He took the time to listen to my concerns and help come up with a solution. My feet have never felt better."</h1>
                             </div>
-                            <!-- <div class="carousel-item">
-                                <h1>Wow! I really felt special when I went to see Mike. He took the time to listen to my concerns and help come up with a solution. My feet have never felt better.</h1>
-                            </div> -->
                         </div>
                     </div>
                 </div>
