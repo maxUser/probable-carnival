@@ -3,3 +3,17 @@
     border-radius:3px;
     padding: 0px 5px 0px 5px;
 }
+
+#header {
+    /* background-image: linear-gradient(#FF5733, #FFC300); */
+    /* background-color: #FF5733; */
+    background-image: url("images2/stripes.png");
+    background-position: center;
+    font-style: italic;
+    color:white;
+    padding: 20px 0px 20px 0px;
+}
+
+#button-row {
+    padding-top: 50px;
+}

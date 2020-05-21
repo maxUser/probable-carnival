@@ -4,12 +4,16 @@
         <title>Sole Purpose Foot Care</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="static/main.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="static/main.css">
-         <script src="static/main.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav mx-auto">
+                <ul data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
@@ -39,48 +43,52 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row justify-content-end" id="header">
-                <!-- <div class="col-12 text-center">
-                    <h1 style="font-size: 30px;">Sole Purpose</h1>
-                    <h4 style="font-size: 90px;">Foot Care</h4>
 
-                </div> -->
-                <img src="images/logo-large.png" alt="">
+            <div class="row justify-content-end" id="header">
+                <img data-aos="fade-in" data-aos-delay="50" data-aos-duration="1800" src="images/logo-large.png" alt="">
+            </div>
+
+            <div class="row justify-content-center" id="packages-title">
+                <h1 data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" class="display-2">Packages</h1>
             </div>
 
             <!-- FOOT CARE PACKAGES -->
             <div class="row justify-content-center" id="package-buttons">
-                <div class="col-lg-3">
-                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#fullPackageCollapse" aria-expanded="false" aria-controls="fullPackageCollapse">Full Nursing Foot Care</button>
+                <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="col-lg-3">
+                    <button id="full-btn" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#fullPackageCollapse" aria-expanded="false" aria-controls="fullPackageCollapse"><span>Full Nursing Foot Care</span></button>
                 </div>
-                <div class="col-lg-3">
-                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#nailCareCollapse" aria-expanded="false" aria-controls="nailCareCollapse">Nursing Nail Care</button>
+                <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="col-lg-3">
+                    <button class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#nailCareCollapse" aria-expanded="false" aria-controls="nailCareCollapse">Nursing Nail Care</button>
                 </div>
-                <div class="col-lg-3">
-                    <button style="line-height: 90%;" class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#skinCareCollapse" aria-expanded="false" aria-controls="skinCareCollapse">Nursing Skin Care</button>
+                <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" class="col-lg-3">
+                    <button class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#skinCareCollapse" aria-expanded="false" aria-controls="skinCareCollapse">Nursing Skin Care</button>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" class="col-lg-3">
+                    <button class="btn btn-info btn-lg" type="button" data-toggle="collapse" data-target="#otherServicesCollapse" aria-expanded="false" aria-controls="otherServicesCollapse">Other Services</button>
                 </div>
             </div>
-            <div class="row justify-content-center" id="package-options">
+
+            <div class="row" id="package-options">
                 <div class="col-lg-3">
                     <div class="collapse" id="fullPackageCollapse">
                         <div class="card" id="card1">
-                                <div class="row card-body">
-                                    <div class="col">
-                                        Includes:
-                                    <ul class="">
-                                        <li>Full Assessment</li>
-                                        <li>All Nail Care</li>
-                                        <li>All Skin Care</li>
-                                        <li>Moisturize</li>
-                                        <li>Massage</li>
-                                    </ul>
-                                    </div>
-                                    <div class="col">
-                                        <p>Great option for first time clients. You will receive a comprehensive foot health assessment, including recommendations for future foot treatments.</p>
-                                        <br>
-                                        <p>$65.00</p>
-                                    </div>
+                            <div class="row card-body">
+                                <div class="col">
+                                    Includes:
+                                <ul class="">
+                                    <li>Full Assessment</li>
+                                    <li>All Nail Care</li>
+                                    <li>All Skin Care</li>
+                                    <li>Moisturize</li>
+                                    <li>Massage</li>
+                                </ul>
                                 </div>
+                                <div class="col">
+                                    <p>Great option for first time clients. You will receive a comprehensive foot health assessment, including recommendations for future foot treatments.</p>
+                                    <br>
+                                    <p>$65.00</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,14 +128,30 @@
                                     <li>Callus Filing</li>
                                     <li>Corn Removal</li>
                                     <li>Skin Conditions</li>
-                                    <li>Massage</li>
                                     <li>Moisturize</li>
+                                    <li>Massage</li>
                                 </ul>
                                 </div>
+                            </div>
+                            <div class="row card-body" style="margin-top:-40px;">
                                 <div class="col">
                                     <p>Nails in great shape? Amazing! This service will help alleviate any current painful skin conditions.</p>
                                     <br>
                                     <p>$50.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="collapse" id="otherServicesCollapse">
+                        <div class="card" id="card1">
+                            <div class="row card-body">
+                                <div class="col">
+                                    <Strong>Certified Ear Syringing</Strong>
+                                    <p>If you're having difficulties hearing, it may be due to a build up of cerumen (ear wax).
+Other indications for Ear Syringing and cerumen removal include: earaches, hearing loss, ear fullness, or ear itchiness.
+This service includes a full assessment of the ear canal to determine if cerumen removal is appropriate.</p>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +167,7 @@
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                 <h5 class="mb-1"><strong>Full Nursing Foot Care</strong></h5>
+                                    <h5 class="mb-1">Full Nursing Foot Care</h5>
                                 </button>
                                 </h2>
                             </div>
@@ -172,7 +196,7 @@
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      <h5 class="mb-1"><strong>Nursing Nail Care</strong></h5>
+                                      <h5 class="mb-1">Nursing Nail Care</h5>
                                     </button>
                                 </h2>
                             </div>
@@ -196,11 +220,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <h5 class="mb-1"><strong>Nursing Skin Care</strong></h5>
+                                        <h5 class="mb-1">Nursing Skin Care</h5>
                                     </button>
                                 </h2>
                             </div>
@@ -213,8 +238,8 @@
                                         <li>Callus Filing</li>
                                         <li>Corn Removal</li>
                                         <li>Skin Conditions</li>
-                                        <li>Massage</li>
                                         <li>Moisturize</li>
+                                        <li>Massage</li>
                                     </ul>
                                     </div>
                                     <div class="col">
@@ -225,12 +250,34 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h5 class="mb-1">Certified Ear Syringing</h5>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#footcare-package-accordion">
+                                <div class="row card-body">
+                                    <div class="col">
+                                        <p>If you're having difficulties hearing, it may be due to a build up of cerumen (ear wax).
+    Other indications for Ear Syringing and cerumen removal include: earaches, hearing loss, ear fullness, or ear itchiness.
+    This service includes a full assessment of the ear canal to determine if cerumen removal is appropriate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div class="row justify-content-center" id="more-info-title">
+                <h1 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="display-3">More Info</h1>
+            </div>
+
             <!-- CARE INFO ROW -->
-            <div class="row" id="service-info">
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="row" id="service-info">
                 <div class="col-lg-4" id="one">
                     <h1>Callus & Corn<br>Removal</h1>
                     <button class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#info-collapse1" aria-expanded="false" aria-controls="info-collapse1">Read More</button>
@@ -267,38 +314,6 @@
                             <li>I will provide a comprehensive assessment of how you walk and to how the physiology of your feet is affecting you. Whether it is causing you pain from an ulcer or from a corn, I will help you get to the root cause of the problem and make appropriate referrals.</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-
-            <!-- DROPDOWN INFO MENU depracated -->
-            <div class="row " id="popdown-info">
-                <!-- <div class="col-md-4 text-center" id="collapse-one">
-                    <div class="collapse multi-collapse" id="collapse1">
-                        <ul class="list-unstyled">
-                            <li><strong>Whats the difference?</strong></li>
-                            <li><strong>Callus</strong>: a section of skin that has become thickened or toughened due to friction, pressure or irritation. Calluses are yellowish or pale in colour, course to touch; with a decreased sensation on the callused area. Calluses are rarely painful.</li>
-                            <li><strong>Corn</strong>: similar to a callus, but smaller and with a clearly defined centre that can be hard or soft. They tend to form on parts of your feet where you do not bare weight, but instead on bony prominences. Corns can be painful when pressed.​</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="col-md-4 text-center" id="collapse-two">
-                    <!-- <div class="collapse multi-collapse" id="collapse2">
-                        <ul class="list-unstyled">
-                            <li><strong>Dealing with all types of toenails</strong></li>
-                            <li><small><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</small></li>
-                            <li><small><strong>Ingrown Nails</strong>: Occur when the nail grows into one or both sides of the paronychium. The skin appears red and inflamed and may become infected. They are very painful to touch. Seek medical attention if infection is present.</small></li>
-                            <li><small><strong>Ram's Horn Toenails</strong>: A nail disease that causes one side of the nail to grow faster than the other. The nails are thick and curvy. The nail will look yellow or brown, thick, long and curvy.</small></li>
-                            <li><small>There are many other types of nail deformities that I can deal with. If you have any concerns with your nails please feel free to send me a message!</small></li>
-                        </ul>
-                    </div> -->
-                </div>
-                <div class="col-md-4 text-center" id="collapse-three">
-                    <!-- <div class="collapse multi-collapse" id="collapse3">
-                        <ul class="list-unstyled">
-                            <li><strong>Assessment of feet in order to determine a plan of action</strong></li>
-                            <li>I will provide a comprehensive assessment of how you walk and to how the physiology of your feet is affecting you. Whether it is causing you pain from an ulcer or from a corn, I will help you get to the root cause of the problem and make appropriate referrals.</li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
 
@@ -349,5 +364,9 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

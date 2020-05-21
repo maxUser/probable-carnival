@@ -16,21 +16,21 @@
 
         <div class="container p-3 my-3 border text-dark">
 
-            <div class="row">
+            <div class="row" id="header">
                 <div class="col-sm-12 text-center">
-                    <h1>MAX KASPRZIK</h1>
+                    <h1 class="display-3">MAX KASPRZIK</h1>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="button-row">
                 <div class="col text-center">
                     <button class="btn btn-danger" id="button" onclick="show_hangman_game()">Play Hangman</button>
                 </div>
             </div>
-            <!-- ------- -->
+            <!-- MMMMMMM -->
             <!-- HANGMAN -->
-            <!-- ------- -->
-            <div class="container p-3 my-3 bg-dark text-white" id="hangman_game" style="display:block">
+            <!-- WWWWWWW -->
+            <div class="container p-3 my-3 bg-dark text-white" id="hangman_game" style="display:none">
                 <div class="row justify-content-end">
                     <div class="col-4">
                         <div id="player_pick_screen">
@@ -98,16 +98,6 @@
                     </div>
                 </div>
             </div>
-            <!-- ----------- -->
-            <!-- END HANGMAN -->
-            <!-- ----------- -->
-            <!-- <div id="test_div">
-                <p>Test Div</p>
-                <p id="test_p">asdf</p>
-                <script>
-                    document.getElementById("test_p").innerHTML = get_random_word();
-                </script>
-            </div> -->
         </div>
     </body>
 </html>

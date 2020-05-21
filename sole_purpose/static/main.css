@@ -14,10 +14,6 @@ body {
   /* font-family: Helvetica, Arial, sans-serif; */
 }
 
-#accouncement {
-    color: red;
-}
-
 #one, #two, #three, #four {
     background-color: #f7f7f7;
     padding-top: 30px;
@@ -41,8 +37,12 @@ body {
     text-align: center;
 }
 
-#headingOne, #headingTwo, #headingThree {
-    background-color: #d1eff7;
+#headingOne, #headingTwo, #headingThree, #headingFour {
+    background-color: #0095ad;
+}
+
+.mb-1 {
+    color: white;
 }
 
 button, h5 {
@@ -63,7 +63,6 @@ button, h5:hover {
 }
 
 
-
 #package-options-small {
     background-color: #ebf6f9;
     padding-bottom: 50px;
@@ -71,7 +70,6 @@ button, h5:hover {
 
 #package-options {
     background-color: #ebf6f9;
-    padding-bottom: 50px;
     padding-top: 5px;
 }
 
@@ -81,14 +79,43 @@ button, h5:hover {
 }
 
 #package-buttons button {
-    /* font-size: 40px; */
     font-size: 3.1vw;
     height: 145px;
     overflow: hidden;
+    color: #00B8FB;
+    /* color: black; */
+    line-height: 90%;
+}
+
+#package-buttons button:hover{
+    color:white;
+    background-color: #00B8FB !important;
+    border: 1px solid #00B8FB;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+    /* Override the default bootstrap colour */
+    background-color: white !important;
+    border: 1px solid #00B8FB;
+    /* border: 1px solid black; */
 }
 
 .row .card-body {
     font-size: 20px;
+}
+
+#packages-title {
+    background-color:#ebf6f9;
+    padding-bottom:30px;
+    color: #0098F9;
+}
+
+#more-info-title {
+    background-image: linear-gradient(#ebf6f9, #f7f7f7);
+    padding-bottom:30px;
+    padding-top:250px;
+    /* color: #0098F9; */
+    color: black;
 }
 
 #bio {
@@ -101,10 +128,6 @@ button, h5:hover {
     max-width: 100%;
     padding:1px;
     border: thick double black;
-}
-
-#about-me-list {
-    /* background-color: #dbccc0; */
 }
 
 #about-me-title {
