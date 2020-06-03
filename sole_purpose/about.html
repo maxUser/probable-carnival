@@ -12,32 +12,8 @@
          <script src="static/main.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-exanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Therapeutic Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
+        <!-- NAVBAR -->
+        <div id="navbar"></div>
 
         <!-- ABOUT ME INFO ROW -->
         <div class="row" id="bio" style="padding-bottom:50px;">
@@ -50,7 +26,7 @@
                 </p>
             </div>
             <div class="col-3" id="portrait">
-                <img src="images/michael_the_nurse.png" alt="michael">
+                <img src="static/images/michael_the_nurse.png" alt="michael">
             </div>
             <div class="col-3" id="about-me-list">
                 <h1 id="about-me-title">About Me</h1>
@@ -63,31 +39,7 @@
                 </ul>
             </div>
         </div>
-        <hr>
         <!-- CONTACT FORM -->
-        <div class="row" id="contact-row">
-            <div class="col-lg-6" id="contact-info">
-                <p>
-                    <h4 style="color:#c1c1c1">Sole Purpose</h4><br>
-                    admin@solepurposefootcare.org<br>
-                    www.solepurposefootcare.org<br>
-                    Victoria, B.C.
-                </p>
-            </div>
-            <div class="col-lg-6" id="contact-form">
-                <form action="https://formspree.io/mjvabnln" method="POST">
-                    <div class="form-inline my-3">
-                        <label class="sr-only" for="name-input">Name</label>
-                        <input class="form-control" type="text" id="name-input" placeholder="Name">
-                        <label class="sr-only" for="email-input">Email</label>
-                        <input class="form-control" type="email" name="_replyto" id="email-input" placeholder="Email" style="width:300px;">
-                    </div>
-
-                    <textarea class="form-control my-2" rows="5" id="message-input" placeholder="Message" style="width:485px;"></textarea>
-
-                    <button type="submit" class="btn btn-secondary btn-sm">Send</button>
-                </form>
-            </div>
-        </div>
+        <div id="footer-contact"></div>
     </body>
 </html>

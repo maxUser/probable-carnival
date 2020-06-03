@@ -3,6 +3,16 @@
     padding: 75px 0px 55px 0px;
 }
 
+#home-header {
+    padding: 75px 0px 55px 0px;
+}
+
+#home-background {
+    /* background-image: url('../static/images/water.jpg');
+    background-size: cover; */
+    background-color: #ebf6f9;
+}
+
 .navbar-nav > li{
   padding-left:60px;
   padding-right:60px;
@@ -10,7 +20,8 @@
 }
 
 body {
-  font-family: Optima, Helvetica, sans-serif;
+    background-color: #ebf6f9;
+    font-family: Optima, Helvetica, sans-serif;
   /* font-family: Helvetica, Arial, sans-serif; */
 }
 
@@ -32,6 +43,9 @@ body {
     padding-bottom: 5px;
 }
 
+#agency-page-btn {
+    padding-top: 50px;
+}
 
 #service-info {
     text-align: center;
@@ -82,38 +96,40 @@ button, h5:hover {
     font-size: 3.1vw;
     height: 145px;
     overflow: hidden;
-    color: #00B8FB;
-    /* color: black; */
+    /* color: #00B8FB; */
+    color: #F5ABC5;
     line-height: 90%;
 }
 
 #package-buttons button:hover{
     color:white;
-    background-color: #00B8FB !important;
-    border: 1px solid #00B8FB;
+    background-color: #F5ABC5 !important;
+    border: 1px solid #F5ABC5;
 }
 
 .btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
     /* Override the default bootstrap colour */
     background-color: white !important;
-    border: 1px solid #00B8FB;
-    /* border: 1px solid black; */
+    /* border: 1px solid #00B8FB; */
+    border: 1px solid #F5ABC5;
 }
 
 .row .card-body {
     font-size: 20px;
 }
 
+
 #packages-title {
     background-color:#ebf6f9;
     padding-bottom:30px;
-    color: #0098F9;
+    /* color: #0098F9; */
+    color: #F5ABC5;
 }
 
 #more-info-title {
     background-image: linear-gradient(#ebf6f9, #f7f7f7);
     padding-bottom:30px;
-    padding-top:250px;
+    padding-top:225px;
     /* color: #0098F9; */
     color: black;
 }
@@ -173,15 +189,33 @@ button, h5:hover {
     margin-right:7px;
 }
 
-#footcare-btn {
-    font-size: 30px;
-    background-color: pink;
-    border: pink;
+#footcare-btn:hover {
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 12px grey;
 }
+
+#agency-btn:hover {
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 12px grey;
+}
+
+#footcare-option {
+    color:black;
+}
+
+#footcare-btn {
+    font-size: 50px;
+    background-color: #F5ABC5;
+    border: #F5ABC5;
+    height: 150px;
+
+}
+
 #agency-btn {
-    font-size: 30px;
-    background-color: purple;
-    border: purple;
+    font-size: 50px;
+    background-color: #ecd1ff;
+    border: #ecd1ff;
+    height: 150px;
 }
 
 /* MEDIA SHIT */

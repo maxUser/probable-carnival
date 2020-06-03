@@ -16,36 +16,14 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-exanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- NAVBAR -->
+        <div id="navbar"></div>
 
-                <ul data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Therapeutic Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
 
-            </div>
-        </nav>
         <div class="container-fluid">
 
             <div class="row justify-content-end" id="header">
-                <img data-aos="fade-in" data-aos-delay="50" data-aos-duration="1800" src="images/logo-large.png" alt="">
+                <img data-aos="fade-in" data-aos-delay="50" data-aos-duration="1800" src="static/images/logo-large.png" alt="">
             </div>
 
             <div class="row justify-content-center" id="packages-title">
@@ -276,7 +254,7 @@ This service includes a full assessment of the ear canal to determine if cerumen
                 <h1 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="display-3">More Info</h1>
             </div>
 
-            <!-- CARE INFO ROW -->
+            <!-- MORE INFO ROW -->
             <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" class="row" id="service-info">
                 <div class="col-lg-4" id="one">
                     <h1>Callus & Corn<br>Removal</h1>
@@ -297,10 +275,9 @@ This service includes a full assessment of the ear canal to determine if cerumen
                     <div class="collapse" id="info-collapse2">
                         <ul class="list-unstyled">
                             <li><strong>Dealing with all types of toenails</strong></li>
-                            <li><small><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</small></li>
-                            <li><small><strong>Ingrown Nails</strong>: Occur when the nail grows into one or both sides of the paronychium. The skin appears red and inflamed and may become infected. They are very painful to touch. Seek medical attention if infection is present.</small></li>
-                            <li><small><strong>Ram's Horn Toenails</strong>: A nail disease that causes one side of the nail to grow faster than the other. The nails are thick and curvy. The nail will look yellow or brown, thick, long and curvy.</small></li>
-                            <li><small>There are many other types of nail deformities that I can deal with. If you have any concerns with your nails please feel free to send me a message!</small></li>
+                            <li><strong>Thickened Toenails</strong>: Most often associated with a fungal infection. The nail becomes foggy, dry and brittle. The colour may be gray, yellow, brown or black. Very common.</li>
+                            <li><strong>Ingrown Nails</strong>: Occur when the nail grows into one or both sides of the paronychium. The skin appears red and inflamed and may become infected. They are very painful to touch. Seek medical attention if infection is present.</li>
+                            <li><strong>Ram's Horn Toenails</strong>: A nail disease that causes one side of the nail to grow faster than the other. The nails are thick and curvy. The nail will look yellow or brown, thick, long and curvy.</li>
                         </ul>
                     </div>
                 </div>
@@ -319,7 +296,7 @@ This service includes a full assessment of the ear canal to determine if cerumen
 
             <div class="row justify-content-center text-center" id="feedback-slideshow">
                 <div class="col-6">
-                    <div class="carousel slide" data-ride="carousel" data-interval="500000">
+                    <div class="carousel slide" data-ride="carousel" data-interval="6000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <h1>"Sole Purpose's professional mannerism, in combination with excellent clinical skills, made for a feeling of safe and effective nursing care."</h1>
@@ -333,36 +310,7 @@ This service includes a full assessment of the ear canal to determine if cerumen
             </div>
 
             <!-- CONTACT FORM -->
-            <div class="row" id="contact-row">
-                <!-- <div class="col-lg-2" id="contact-info">
-
-                </div>
-                <div class="col-lg-2" id="contact-info">
-                </div> -->
-                <div class="col-lg-6" id="contact-info">
-                    <p>
-                        <h4 style="color:#c1c1c1">Sole Purpose</h4><br>
-                        admin@solepurposefootcare.org<br>
-                        www.solepurposefootcare.org<br>
-                        Victoria, B.C.
-                    </p>
-                </div>
-                <div class="col-lg-6" id="contact-form">
-                    <form action="https://formspree.io/mjvabnln" method="POST">
-                        <div class="form-inline my-3">
-                            <label class="sr-only" for="name-input">Name</label>
-                            <input class="form-control" type="text" name="_name" id="name-input" placeholder="Name">
-                            <label class="sr-only" for="email-input">Email</label>
-                            <input class="form-control" type="email" name="_replyto" id="email-input" placeholder="Email" style="width:300px;">
-                        </div>
-
-                        <textarea class="form-control my-2" rows="5" name="_message" id="message-input" placeholder="Message" style="width:485px;"></textarea>
-
-                        <button type="submit" class="btn btn-secondary btn-sm">Send</button>
-                    </form>
-
-                </div>
-            </div>
+            <div id="footer-contact"></div>
         </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
